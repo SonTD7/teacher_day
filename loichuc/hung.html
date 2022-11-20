@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border-style: inset; padding: 10px;">
+        <!--  -->
+            <h1>1. Sử dụng Alert để hiển thị Message</h1>
+            <h2>The alert() Method</h2>
+            <p>Ckick vào nút để hiện thị tin nhắn.</p>
+            <button id="btn-click"> Click</button>
+        
+            <script>
+                document.getElementById("btn-click").onclick = showClick ;
+                function showClick(){
+                    alert(" Click theo thứ tự từng nút để hiển thị tin nhắn anh nhé:)).");
+                }
+            </script>
+        
+        <!--  -->
+            <div style="display: grid; grid-template-columns: auto auto auto auto;">
+                <div>
+                    <h1>2. Display</h1>
+                    <p>Nhấn nút để hiển thị điều thú vị:</p>
+                    <button id="btn-show"> 1</button>
+                    <button id="btn-show1"> 2</button>
+                    <button id="btn-show2"> 3</button>
+                </div>
+        
+                <div style="display: grid; grid-template-rows: auto auto auto auto;">
+                    <div id="showSpr" style="display: none;  "> 
+                        <h1 style="margin: 0;"> Em Hưng  </h1>
+                    </div>
+            
+                    <div id="showSpr1" style="display: none;  "> 
+                        <h1 style="margin: 0;"> lại chúc anh Trung </h1>
+                    </div>
+            
+                    <div id="showSpr2" style="display: none;  "> 
+                        <h1 style="margin: 0;"> mau sinh quý tử:)) </h1>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <script>
+                document.getElementById("btn-show").onclick = showShow ;
+                function showShow(){
+                    document.getElementById("showSpr").style = " display: inline !important;"
+                }
+        
+                document.getElementById("btn-show1").onclick = showShow1 ;
+                function showShow1(){
+                    document.getElementById("showSpr1").style = " display: inline !important;"
+                }
+        
+                document.getElementById("btn-show2").onclick = showShow2 ;
+                function showShow2(){
+                    document.getElementById("showSpr2").style = " display: inline !important;"
+                }
+            </script>
+    </div>        
+</body>
+</html>l
